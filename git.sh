@@ -1,0 +1,5 @@
+# python code_transform.py --seed 42 --model efficientnet-b0 --lr 1e-4 --epoch 10 --kfold_train train_1_5.csv --kfold_val test_1_5.csv --save_path kfold/kfold1/efficientnetb0_kfold1
+# python code_transform.py --seed 42 --model efficientnet-b0 --lr 1e-4 --epoch 10 --kfold_train train_2_5.csv --kfold_val test_5_5.csv --save_path kfold/kfold2/efficientnetb0_kfold2
+python code_transform.py --seed 42 --model efficientnet-b0 --lr 1e-4 --epoch 15 --kfold_train train_3_5.csv --kfold_val test_3_5.csv --save_path kfold/kfold3/efficientnetb0_kfold3
+# python code_transform.py --seed 42 --model efficientnet-b0 --lr 1e-4 --epoch 15 --kfold_train train_4_5.csv --kfold_val test_4_5.csv --save_path kfold/kfold4/efficientnetb0_kfold4
+# python code_transform.py --seed 42 --model efficientnet-b0 --lr 1e-4 --epoch 10 --kfold_train train_5_5.csv --kfold_val test_5_5.csv --save_path kfold/kfold5/efficientnetb0_kfold5

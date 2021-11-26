@@ -2,7 +2,9 @@
 
 - [대회 Link](http://nphd2021.co.kr/)
 
-## 팀소개
+![image](https://user-images.githubusercontent.com/77658029/143607271-7deb6023-a48a-4e92-b722-3618f8e48034.png)
+
+## 팀명뭘로하조A
 
 - 황원상
 - 홍요한
@@ -33,24 +35,25 @@
 
 0. EDA 진행
     - 하얗게 반이상 빈공간으로 이루어진 Image 존재
-    - 대부분은 보라색 or 붉은 색으로 이루어짐
+    - 대부분은 보라색/붉은 색으로 이루어짐
     - 비정형적인 모습(세포질이 무너진 형태)가 많음
 
 1. K-Fold를 활용한 Validation Set 구축 (8:2)
 
 2. 과적합을 피하기 위한 작은 Model 시도(EfficientNet, MobileNet, Non bottleNeck 1D)
+    - 비슷한 이미지들이 많아 뽑아야할 특징이 많지 않을 것이라고 판단
 
 ![image](https://user-images.githubusercontent.com/77658029/142766726-7f904f13-23ab-4c5a-ac0c-20721858ceff.png)
 
-- NB1D(Non bottleNeck 1D) : Model 용량은 작지만 간혹 튀는 현상이 있어 사용 어려움
+- NB1D(Non bottleNeck 1D) : Model 용량은 작지만 간혹 튀는 현상이 있어 사용 어려움 -> 시간 부족으로 원인 파악 안됨
 
 3. Augmentation 선정
 
 - 심하게 왜곡되는 Augmentation 제외
 - 중간에 비어있는 공간들이 있어 Cutout 추가(제거된 공간은 실제 빈공간처럼 White로 입력)
 - 소화기의 조직세포이기 때문에 큰 Image의 일부만 떼어온 Image의 형상
-    - Rotate, RandomResizedCrop, ShiftScaleRotate, HorizontalFlip, VerticalFlip를 통하여 여러 지역에서 찍은 효과를 줌
-- H&E 염색으로 인한 보라색 빛이 돌지만, 탈색이 덜된 곳은 양성/음성에 관계없이 붉은 빛을 도는 세포들도 존재 - HueSaturationValue로 색을 조정하여 양성/음성에서의 색에 대한 부분도 학습을 시켜줌
+    - Rotate, RandomResizedCrop, ShiftScaleRotate, HorizontalFlip, VerticalFlip를 통하여 소화기의 여러 부분에서 뽑은 효과를 줌
+- H&E 염색으로 인한 보라색 빛이 돌지만, 탈색이 덜된 곳은 양성/음성에 관계없이 붉은 빛을 도는 세포들도 존재 HueSaturationValue로 색을 조정하여 양성/음성에서의 색에 대한 부분도 학습을 시켜줌
 - 비정형적인 세포의 모습을 전반적으로 학습하기 위해 ElasticTransform를 넣어줌
 - 모델의 과적합이 쉽게 일어나는 것으로 생각되어 Epoch을 줄이고 전반적으로 높은 확률로 Augmentation을 적용시킴
 
@@ -75,6 +78,7 @@
 
 5. Result
 
+- final point : 0.9850 (1등/15팀)
 
 
 ## Reference

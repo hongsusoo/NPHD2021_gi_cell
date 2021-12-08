@@ -21,9 +21,7 @@
 
 ## Data 소개
 
-![image](https://user-images.githubusercontent.com/77658029/142766180-a26e61b5-9b9a-4fba-b8b5-2f864306c00e.png)
-
-- 특징 : 핵의 비정상적인 단백질(DNA)분열로 인하여 세포핵이 커지며고 세포질이 작아지는 형상으로 나타남
+- 핵의 비정상적인 단백질(DNA)분열로 인하여 세포핵이 커지며고 세포질이 작아지는 형상으로 나타남
 
 ## 평가 방법
 
@@ -78,7 +76,7 @@
 
 5. Result
 
-- final point : 0.9850 (1등/15팀)
+- final point : 0.9850 (**1등**/15팀)
 
 
 ## Reference

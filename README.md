@@ -93,8 +93,7 @@
     - 앙상블 할 것을 고려하여, 30 MB 내외이면서 테스트시 성능이 좋은 모델을 선택
     - 비슷한 이미지들이 많아 뽑아야할 특징이 많지 않을 것이라고 판단
     - 모델별 테스트 결과
-    <img src="https://user-images.githubusercontent.com/77658029/145201861-7775425b-ca12-4d16-af64-f5efce04080d.png"  width="70%" height="70%"/>
-        
+    <img src="https://user-images.githubusercontent.com/77658029/145201861-7775425b-ca12-4d16-af64-f5efce04080d.png"  width="70%" height="70%"/><br>
         - EfficientNet-b0, MixNet을 선정
         - NB1D(Non bottleNeck 1D)는 모델별 초기 테스트시 안정적인 학습이 되지 않는 현상이 발견되어 후보에서 제외함 
         

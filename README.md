@@ -127,7 +127,7 @@
 
 ## Reference
 
-<p><span style="background-color:#EEEEEE;">NPHD2021 - 소화기 병리 / CC BY 2.0<br/>
+<p><span style="background-color:#EEEEEE;">NPHD2021 - 소화기 병리 <br/>
 http://nphd2021.co.kr/
 </span></p>
 
